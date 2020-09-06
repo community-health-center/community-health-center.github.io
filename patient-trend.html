@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Patient Account</title>   
+
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jquery-ui-custom.css">
+	<link rel="stylesheet" href="css/mmenu.css">
+	<link rel="stylesheet" href="css/placebo.css">
+	<link rel="stylesheet" href="css/prettyPhoto.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="layerslider/css/layerslider.css">
+	<link rel="stylesheet" href="css/twentytwenty.css">
+	<link rel="stylesheet" href="css/test.css">
+
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+
+</head>
+
+
+    <body class="home page page-id-77 page-parent page-template-default custom-background waves-pagebuilder menu-fixed theme-full">
+   	<div id="theme-layout">
+		<div class="tw-top-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="tw-top-widget left" id="text-2">
+							<div class="textwidget">
+								<i class="fa fa-envelope-o"></i> medhacks.chc@gmail.com
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="tw-top-widget right" id="search-3">
+							<form role="search" method="get" id="searchform" action="#">
+								<div class="input">
+									<input type="text" value="" name="s" id="s" placeholder="Search Here">
+									<i class="button-search fa fa-search"></i>
+								</div>
+							</form>
+						</div>
+						<div class="tw-top-widget right" id="woocommerce_widget_cart-2">
+							<span class="top-widget-title">Your Cart</span>
+							<div class="widget_shopping_cart_content">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Start Header -->
+		<header id="header" class="header-large">
+			<div class="container">
+				<div class="show-mobile-menu clearfix">
+					<a href="#mobile-menu" class="mobile-menu-icon">
+					<span></span><span></span><span></span><span></span>
+					</a>
+				</div>
+				<div class="row header">
+					<div class="col-md-3">
+						<div class="tw-logo">
+							<a class="logo" href="index.html"><img class="logo-img" src="img/CHCLogo.jpg" alt="Craft"></a>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<nav class="menu-container clearfix">
+						<div class="tw-menu-container">
+							<ul id="menu" class="sf-menu">
+								<li class="menu-item menu-item-has-children"><a href="index.html">Home</a></li>
+								<li class="menu-item menu-item-has-children"><a href="#">My Account</a></li>
+								<li class="menu-item menu-item-has-children"><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+						</nav>
+					</div>
+                </div>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawBPChart);
+        google.charts.setOnLoadCallback(drawWeightChart);
+        google.charts.setOnLoadCallback(drawPulseChart);
+        google.charts.setOnLoadCallback(drawGluChart);
+        function drawBPChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Date', 'Systolic Blood pressure', 'Diastolic Blood pressure'],
+            ['8/28',  111, 80.8],
+            ['8/29',  110.9, 81.5],
+            ['8/30',  113.4,   87],
+            ['8/31',  112.7, 88.8],
+            ['9/1',  113.9, 87.6],
+            ['9/2',   114, 83.6],
+            ['9/3',   113.6, 82.3],
+            ['9/4',  112.3, 89.2],
+            ['9/5',  111.9, 82.9],
+            ['9/6', 110, 81],
+
+          ]);
+  
+          var options = {
+            
+            title:"Blood Pressure(mmHg)",
+            titleTextStyle: {
+            color: '#1c9b8f',    // any HTML string color ('red', '#cc00cc')
+            fontSize: 20 // 12, 18 whatever you want (don't specify px)
+            }
+            };
+          var chart = new google.visualization.LineChart(document.getElementById('bp_chart'));
+          chart.draw(data, options);
+        }
+
+        function drawWeightChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Date', 'Weight'],
+            ['8/28',  63.3],
+            ['8/29',  63.6],
+            ['8/30',  63.1],
+            ['8/31',   62.8],
+            ['9/1',  62.9],
+            ['9/2',   63.4],
+            ['9/3',  63.6],
+            ['9/4',  64.2],
+            ['9/5', 63.5],
+            ['9/6', 63],
+
+          ]);
+  
+          var options = {
+            
+            title:"Weight(kg)",
+            titleTextStyle: {
+            color: '#1c9b8f',    // any HTML string color ('red', '#cc00cc')
+            fontSize: 20 // 12, 18 whatever you want (don't specify px)
+            }
+
+          };
+          var chart = new google.visualization.LineChart(document.getElementById('weight_chart'));
+          
+          chart.draw(data, options);
+        }
+
+        function drawPulseChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Date', 'Rest Pulse'],
+            ['8/28',  87],
+            ['8/29', 84],
+            ['8/30', 87],
+            ['8/31',82],
+            ['9/1', 85],
+            ['9/2', 86],
+            ['9/3', 83],
+            ['9/4', 85],
+            ['9/5', 92],
+            ['9/6', 89],
+
+          ]);
+  
+          var options = {
+            
+            title:"Rest Pulse(bpm)",
+            titleTextStyle: {
+            color: '#1c9b8f',    // any HTML string color ('red', '#cc00cc')
+            fontSize: 20 // 12, 18 whatever you want (don't specify px)
+            }
+
+          };
+          var chart = new google.visualization.LineChart(document.getElementById('pulse_chart'));
+          
+          chart.draw(data, options);
+        }
+
+        function drawGluChart() {
+          var data = google.visualization.arrayToDataTable([
+          ['Date', 'Blood Glucose Level'],
+            ['8/28', 104],
+            ['8/29', 99],
+            ['8/30', 107],
+            ['8/31',121],
+            ['9/1', 117],
+            ['9/2', 110],
+            ['9/3', 98],
+            ['9/4', 125],
+            ['9/5', 108],
+            ['9/6', 105],
+
+          ]);
+  
+          var options = {
+            
+            title:"Blood Glucose Level(mg/dl)",
+            titleTextStyle: {
+            color: '#1c9b8f',    // any HTML string color ('red', '#cc00cc')
+            fontSize: 20 // 12, 18 whatever you want (don't specify px)
+            }
+
+          };
+          var chart = new google.visualization.LineChart(document.getElementById('glu_chart'));
+          
+          chart.draw(data, options);
+        }
+
+      </script>
+    </head>
+    <body>
+      <div id="bp_chart" style="top:0px;left:400px;width: 900px; height: 500px "  ></div>
+      <div id="weight_chart" style="top:0px;left:400px;width: 900px; height: 500px "  ></div>
+      <div id="pulse_chart" style="top:0px;left:400px;width: 900px; height: 500px "  ></div>
+      <div id="glu_chart" style="top:0px;left:400px;width: 900px; height: 500px "  ></div>
+
+   
+
+    </body>
+   
+  </html>
+
+
